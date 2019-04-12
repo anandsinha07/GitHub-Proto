@@ -1,0 +1,86 @@
+<style type="text/css">
+
+@media all and (max-width:640px) and (max-height: 350px) and (min-height: 300px){
+  #particles-js{
+    height: 120vh;
+  }
+  #aboutus-content{
+    border: none;
+  }
+}
+@media all and (max-width:640px) and (max-height: 400px) and (min-height: 350px){
+  #particles-js{
+    height: 110vh;
+  }
+  #aboutus-content{
+    border: none;
+  }
+}
+@media all and (max-width:640px) and (max-height: 500px) and (min-height: 400px){
+  #particles-js{
+    height: 100vh;
+  }
+  #aboutus-content{
+    border: none;
+  }
+}
+@media all and (max-width:640px) and (max-height: 600px) and (min-height: 500px){
+  #particles-js{
+    height: 100vh;
+  }
+  #hero-unit{
+    font-size: 100%;
+  }
+  #aboutus-content{
+    border: none;
+  }
+}
+
+@media all and (max-width:640px) and (max-height: 700px) and (min-height: 600px){
+  #particles-js{
+    height: 100vh;
+  }
+  #hero-unit{
+    font-size: 100%;
+    line-height: 60px;
+  }
+  #aboutus-content{
+    border: none;
+  }
+}
+
+@media all and (max-width:640px) and (max-height: 900px) and (min-height: 700px){
+  #particles-js{
+    height: 70vh;
+  }
+  #aboutus-content{
+    border: none;
+  }
+}
+
+@media all and (max-width:640px) and (max-height: 1200px) and (min-height: 900px){
+  #particles-js{
+    height: 50vh;
+  }
+  #aboutus-content{
+    border: none;
+  }
+}
+@media all and (max-width:640px) and (min-height: 1200px) and (max-height: 1300px){
+  #particles-js{
+    height: 45vh;
+  }
+  #aboutus-content{
+    border: none;
+  }
+}
+
+@media all and (max-width:640px) and (min-height: 1300px) and (max-height: 1400px){
+  #particles-js{
+    height: 40vh;
+  }
+  #aboutus-content{
+    border: none;
+  }
+}
+</style>

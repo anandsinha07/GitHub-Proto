@@ -1,0 +1,705 @@
+<style>
+.update-card{
+	width: 30%;
+	height: 135%;
+	position: absolute;
+	top: 10%;
+	left: 35%;
+	background-color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	padding: 30px;
+	box-shadow: 1px 1px 10px;
+}
+.update-card .title h3{
+	color: rgb(1,87,155);
+}
+.update-card .body{
+	margin: 30px 10px;
+}
+.update-card .form-group{
+	margin: 20px 0px;
+}
+.footer{
+	position: absolute;
+	top: 155vh;
+}
+
+@media all and (max-width:640px) and (max-height: 325px) and (min-height: 300px){
+	.update-card {
+		width: 90%;
+		height: 280%;
+		position: absolute;
+		top: 20%;
+		left: 5%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+	position: absolute;
+	top: 310vh;
+    }
+}
+
+@media all and (max-width:640px) and (max-height: 350px) and (min-height: 325px){
+	.update-card {
+		width: 90%;
+		height: 270%;
+		position: absolute;
+		top: 20%;
+		left: 5%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+	position: absolute;
+	top: 300vh;
+    }
+}
+
+@media all and (max-width:640px) and (max-height: 400px) and (min-height: 350px){
+	.update-card {
+		width: 90%;
+		height: 235%;
+		position: absolute;
+		top: 20%;
+		left: 5%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+	position: absolute;
+	top: 265vh;
+    }
+}
+
+@media all and (max-width:640px) and (max-height: 450px) and (min-height: 400px){
+	.update-card {
+		width: 90%;
+		height: 210%;
+		position: absolute;
+		top: 20%;
+		left: 5%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+	position: absolute;
+	top: 235vh;
+    }
+}
+
+@media all and (max-width:640px) and (max-height: 480px) and (min-height: 450px){
+	.update-card {
+		width: 90%;
+		height: 185%;
+		position: absolute;
+		top: 20%;
+		left: 5%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+	position: absolute;
+	top: 210vh;
+    }
+}
+
+@media all and (max-width:640px) and (max-height: 510px) and (min-height: 480px){
+	.update-card {
+		width: 90%;
+		height: 173%;
+		position: absolute;
+		top: 20%;
+		left: 5%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+	position: absolute;
+	top: 200vh;
+    }
+}
+
+@media all and (max-width:640px) and (max-height: 570px) and (min-height: 510px){
+	.update-card {
+		width: 90%;
+		height: 163%;
+		position: absolute;
+		top: 20%;
+		left: 5%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+	position: absolute;
+	top: 185vh;
+    }
+}
+
+@media all and (max-width:640px) and (max-height: 625px) and (min-height: 570px){
+	.update-card {
+		width: 90%;
+		height: 147%;
+		position: absolute;
+		top: 20%;
+		left: 5%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+	position: absolute;
+	top: 170vh;
+    }
+}
+
+@media all and (max-width:640px)  and (min-height: 625px) and (max-height:675px) {
+	.update-card {
+		width: 90%;
+		height: 135%;
+		position: absolute;
+		top: 20%;
+		left: 5%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+	position: absolute;
+	top: 160vh;
+    }
+}
+
+@media all and (max-width:640px)  and (min-height: 675px) and (max-height:725px) {
+	.update-card {
+		width: 90%;
+		height: 125%;
+		position: absolute;
+		top: 20%;
+		left: 5%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+	position: absolute;
+	top: 150vh;
+    }
+}
+
+@media all and (max-width:640px)  and (min-height: 725px) and (max-height:1200px) {
+	.update-card {
+		width: 90%;
+		height: 115%;
+		position: absolute;
+		top: 20%;
+		left: 5%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+	position: absolute;
+	top: 140vh;
+    }
+}
+
+@media all and (max-width:640px)  and (min-height: 1200px) and (max-height:1300px) {
+	.update-card {
+		width: 90%;
+		height: 95%;
+		position: absolute;
+		top: 20%;
+		left: 5%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+	position: absolute;
+	top: 120vh;
+    }
+    h2{
+    	font-size: 255%;
+    	line-height: 35px;
+    }
+    h3{
+    	font-size: 225%;
+    	line-height: 40px;
+    }
+    h5{
+    	font-size: 175%;
+    	line-height: 40px;
+    }
+    h4{
+    	font-size: 200%;
+    	line-height: 40px;
+    }
+    input[type="text"],input[type="password"]{
+    	font-size: 200%;
+    	line-height: 40px;
+    }
+    label{
+    	font-size: 225%;
+    	line-height: 40px;
+    }
+}
+
+@media all and (max-width: 1024px) and (min-width: 640px) and (max-height: 350px) and (min-height: 320px) {
+	.update-card {
+		width: 70%;
+		height: 260%;
+		position: absolute;
+		top: 20%;
+		left: 15%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+	position: absolute;
+	top: 290vh;
+    }
+
+}
+@media all and (max-width: 1024px) and (min-width: 640px) and (max-height: 375px) and (min-height: 350px) {
+	.update-card {
+		width: 70%;
+		height: 240%;
+		position: absolute;
+		top: 20%;
+		left: 15%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+	position: absolute;
+	top: 265vh;
+    }
+
+}
+@media all and (max-width: 1024px) and (min-width: 640px) and (max-height: 400px) and (min-height: 375px) {
+	.update-card {
+		width: 70%;
+		height: 220%;
+		position: absolute;
+		top: 20%;
+		left: 15%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+	position: absolute;
+	top: 244vh;
+    }
+
+}
+@media all and (max-width: 1024px) and (min-width: 640px) and (max-height: 440px) and (min-height: 400px) {
+	.update-card {
+		width: 70%;
+		height: 210%;
+		position: absolute;
+		top: 20%;
+		left: 15%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+	position: absolute;
+	top: 235vh;
+    }
+}
+
+@media all and (max-width: 1024px) and (min-width: 640px) and (max-height: 510px) and (min-height: 440px) {
+	.update-card {
+		width: 70%;
+		height: 192%;
+		position: absolute;
+		top: 20%;
+		left: 15%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+	position: absolute;
+	top: 215vh;
+    }
+}
+
+@media all and (max-width: 1024px) and (min-width: 640px) and (max-height: 625px) and (min-height: 510px) {
+	.update-card {
+		width: 70%;
+		height: 165%;
+		position: absolute;
+		top: 20%;
+		left: 15%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+	position: absolute;
+	top: 195vh;
+    }
+}
+
+@media all and (max-width: 1024px) and (min-width: 640px) and (max-height: 700px) and (min-height: 625px) {
+	.update-card {
+		width: 70%;
+		height: 135%;
+		position: absolute;
+		top: 20%;
+		left: 15%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+	position: absolute;
+	top: 160vh;
+    }
+}
+
+@media all and (max-width: 1024px) and (min-width: 640px) and (max-height: 750px) and (min-height: 700px) {
+	.update-card {
+		width: 70%;
+		height: 120%;
+		position: absolute;
+		top: 20%;
+		left: 15%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+	position: absolute;
+	top: 145vh;
+    }
+}
+
+@media all and (max-width: 1024px) and (min-width: 640px)  and (min-height: 750px) and (max-height: 800px){
+	.update-card {
+		width: 70%;
+		height: 115%;
+		position: absolute;
+		top: 20%;
+		left: 15%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+	position: absolute;
+	top: 140vh;
+    }
+}
+
+@media all and (max-width: 1024px) and (min-width: 640px)  and (min-height: 800px) and (max-height: 950px){
+	.update-card {
+		width: 70%;
+		height: 105%;
+		position: absolute;
+		top: 20%;
+		left: 15%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+	position: absolute;
+	top: 130vh;
+    }
+}
+
+@media all and (max-width: 1024px) and (min-width: 640px)  and (min-height: 950px) and (max-height: 1000px){
+	.update-card {
+		width: 70%;
+		height: 90%;
+		position: absolute;
+		top: 20%;
+		left: 15%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+	position: absolute;
+	top: 115vh;
+    }
+}
+
+@media all and (max-width: 1024px) and (min-width: 640px)  and (min-height: 1000px) and (max-height: 1100px){
+	.update-card {
+		width: 70%;
+		height: 100%;
+		position: absolute;
+		top: 20%;
+		left: 15%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+	position: absolute;
+	top: 125vh;
+    }
+    h2{
+    	font-size: 225%;
+    	line-height: 30px;
+    }
+    h3{
+    	font-size: 205%;
+    	line-height: 30px;
+    }
+    h5{
+    	font-size: 150%;
+    	line-height: 30px;
+    }
+    h4{
+    	font-size: 175%;
+    	line-height: 30px;
+    }
+    input[type="text"],input[type="password"]{
+    	font-size: 175%;
+    	line-height: 30px;
+    }
+    label{
+    	font-size: 200%;
+    	line-height: 30px;
+    }
+}
+
+@media all and (max-width: 1024px) and (min-width: 640px)  and (min-height: 1100px) and (max-height: 1200px){
+	.update-card {
+		width: 70%;
+		height: 90%;
+		position: absolute;
+		top: 20%;
+		left: 15%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+	position: absolute;
+	top: 115vh;
+    }
+    h2{
+    	font-size: 255%;
+    	line-height: 35px;
+    }
+    h3{
+    	font-size: 225%;
+    	line-height: 30px;
+    }
+    h5{
+    	font-size: 175%;
+    	line-height: 30px;
+    }
+    h4{
+    	font-size: 200%;
+    	line-height: 30px;
+    }
+    input[type="text"],input[type="password"]{
+    	font-size: 200%;
+    	line-height: 30px;
+    }
+    label{
+    	font-size: 225%;
+    	line-height: 30px;
+    }
+}
+
+@media all and (max-width: 1024px) and (min-width: 640px)  and (min-height: 1200px){
+	.update-card {
+		width: 70%;
+		height: 94%;
+		position: absolute;
+		top: 20%;
+		left: 15%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+	position: absolute;
+	top: 120vh;
+    }
+    h2{
+    	font-size: 300%;
+    	line-height: 40px;
+    }
+    h3{
+    	font-size: 275%;
+    	line-height: 40px;
+    }
+    h5{
+    	font-size: 225%;
+    	line-height: 40px;
+    }
+    h4{
+    	font-size: 250%;
+    	line-height: 40px;
+    }
+    input[type="text"],input[type="password"]{
+    	font-size: 250%;
+    	line-height: 40px;
+    }
+    label{
+    	font-size: 275%;
+    	line-height: 40px;
+    }
+}
+
+@media all and (max-width: 1280px) and (min-width: 1024px) and (max-height: 625px) and (min-height: 575px){
+	.update-card {
+		width: 50%;
+		height: 145%;
+		position: absolute;
+		top: 20%;
+		left: 25%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+		position: absolute;
+		top: 168vh;
+	}
+}
+
+@media all and (max-width: 1280px) and (min-width: 1024px) and (max-height: 800px) and (min-height: 625px){
+	.update-card {
+		width: 50%;
+		height: 133%;
+		position: absolute;
+		top: 20%;
+		left: 25%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+		position: absolute;
+		top: 160vh;
+	}
+}
+
+@media all and (max-width: 1280px) and (min-width: 1024px) and (max-height: 900px) and (min-height: 800px){
+	.update-card {
+		width: 50%;
+		height: 105%;
+		position: absolute;
+		top: 20%;
+		left: 25%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+		position: absolute;
+		top: 128vh;
+	}
+}
+
+@media all and (max-width: 1280px) and (min-width: 1024px) and (min-height: 900px){
+	.update-card {
+		width: 50%;
+		height: 110%;
+		position: absolute;
+		top: 20%;
+		left: 25%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+		position: absolute;
+		top: 135vh;
+	}
+	h2{
+    	font-size: 225%;
+    	line-height: 30px;
+    }
+    h3{
+    	font-size: 205%;
+    	line-height: 30px;
+    }
+    h5{
+    	font-size: 150%;
+    	line-height: 30px;
+    }
+    h4{
+    	font-size: 175%;
+    	line-height: 30px;
+    }
+    input[type="text"],input[type="password"]{
+    	font-size: 175%;
+    	line-height: 30px;
+    }
+    label{
+    	font-size: 200%;
+    	line-height: 30px;
+    }
+}
+@media all and (max-width: 1920px) and (min-width: 1280px) and (min-height:750px){
+	.update-card {
+		width: 50%;
+		height: 110%;
+		position: absolute;
+		top: 20%;
+		left: 25%;
+		background-color: white;
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 30px;
+		box-shadow: 1px 1px 10px;
+	}
+	.footer{
+		position: absolute;
+		top: 140vh;
+	}
+}
+
+
+</style>

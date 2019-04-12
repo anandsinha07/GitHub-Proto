@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+	<head>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Github</title>
+		{% load staticfiles %}
+		<link rel="shortcut icon" href="favicon.ico">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
+		<link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
+		<link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.0/sweetalert.min.js"></script>
+
+		{% include "css/style.css" %}
+
+	</head>
+	
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		  <button class="cv-btn"><i class="fas fa-bars"></i></button>
+		  <a class="navbar-brand" href="">GitHub</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav mr-auto">
+		      <li class="nav-item">
+		        <a class="nav-link" href="{% url 'home' %}">Home</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Pull Requests</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Issues</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Marketplace</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="#">Explore</a>
+		      </li>
+		  	{% if request.user.is_superuser %}
+		      <li class="nav-item">
+		        <a class="nav-link" href="{% url 'profile:detail' %}">My Profile</a>
+		      </li>
+			  <li class="nav-item dropdown">
+			    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			      Start
+			    </a>
+			    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			    	<a class="dropdown-item" href="{% url 'developer-console:module-create' %}">New Repository</a>
+			    	<a class="dropdown-item" data-toggle="modal" data-target="#UpdateModule" style="cursor:pointer;">New Gist</a>
+			    	<a class="dropdown-item" data-toggle="modal" data-target="#DeleteModule" style="cursor:pointer;">New Organisation</a>
+			    	<a class="dropdown-item" data-toggle="modal" data-target="#DeleteModule" style="cursor:pointer;">New Project</a>
+			    </div>
+			  </li>
+		  	{% elif request.user.is_authenticated %}
+		      <li class="nav-item">
+		        <a class="nav-link" href="{% url 'profile:detail' %}">My Profile</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="{% url 'logout' %}">Logout</a>
+		      </li>
+		  	{% else %}
+		      <li class="nav-item">
+		        <a class="nav-link" href="{% url 'login' %}">Login</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href="{% url 'register' %}">Register</a>
+		      </li>
+		  	{% endif %}
+		    </ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+				</form>&nbsp;&nbsp;&nbsp;
+				<button class="btn btn-outline-danger my-2 my-sm-0" type="button" onclick="window.location.href = {% url 'logout' %}">Logout</button>
+			</div>
+
+		</nav>
+		<div>
+			{% block content %}{% endblock content %}
+		</div>
+		<br>
+		<div class="footer">
+			<center>
+				Made with <i class="fas fa-heart"></i> by Team GitHub
+			</center>
+		</div>
+
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+		<script src="https://unpkg.com/popper.js@1.12.6/dist/umd/popper.js"></script>
+		<script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js"></script>
+		<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+		<script>
+			AOS.init({
+				duration:1500,
+			});
+		</script>
+
+		<script type="text/javascript">
+			function gotoUrl(str)
+			{
+				window.location.href=str;
+			}
+			function updateMod()
+			{
+				window.location.href="/developer/update/"+ document.getElementById("UpdateModuleId").value;
+			}
+			function deleteMod()
+			{
+				window.location.href="/developer/delete/"+ document.getElementById("DeleteModuleId").value;
+			}
+		</script>
+
+		<div class="modal fade" id="UpdateModule" tabindex="-1" role="dialog" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLongTitle">Update Module</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+				<label for="ModuleId">Module ID</label>
+				<input type="text" class="form-control" id="UpdateModuleId" placeholder="Enter module id">      
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary btn-raised" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-bg-indigo btn-raised" onclick="updateMod();">Update Module</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>		
+
+		<div class="modal fade" id="DeleteModule" tabindex="-1" role="dialog" aria-hidden="true">
+		  <div class="modal-dialog modal-dialog-centered" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <h5 class="modal-title" id="exampleModalLongTitle">Delete Module</h5>
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		          <span aria-hidden="true">&times;</span>
+		        </button>
+		      </div>
+		      <div class="modal-body">
+				<label for="ModuleId">Module ID</label>
+				<input type="text" class="form-control" id="DeleteModuleId" placeholder="Enter module id">      
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-secondary btn-raised" data-dismiss="modal">Close</button>
+		        <button type="button" class="btn btn-bg-indigo btn-raised" onclick="deleteMod();">Delete Module</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>		
+	</body>
+
+</html>

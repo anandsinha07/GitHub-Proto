@@ -1,0 +1,472 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+	{% include "css/laptop.css" %}
+	{% include "css/responsive.css" %}
+	<!-- Responsive  -->
+<style type="text/css">
+@media all and (max-width:767px) and (min-width: 640px) and (max-height: 400px) and (min-height: 300px) {
+  #particles-js{
+    height: 100vh;
+  }
+  #hero-unit{
+  	font-size: 80%;
+  	top:20%;
+  }
+  #aboutus-content{
+    border:none;
+  }
+}
+@media all and (max-width:767px) and (min-width: 640px) and (max-height: 500px) and (min-height: 400px) {
+  #particles-js{
+    height: 100vh;
+  }
+  #hero-unit{
+  	font-size: 100%;
+  	top:20%;
+  }
+  #aboutus-content{
+    border:none;
+  }
+}
+@media all and (max-width:767px) and (min-width: 640px) and (max-height: 600px) and (min-height: 500px) {
+  #particles-js{
+    height: 100vh;
+  }
+  #hero-unit{
+  	font-size: 120%;
+  	top:20%;
+  }
+  #aboutus-content{
+    border:none;
+  }
+}
+@media all and (max-width:767px) and (min-width: 640px) and (max-height: 700px) and (min-height: 600px) {
+  #particles-js{
+    height: 70vh;
+  }
+  #aboutus-content{
+    border:none;
+  }
+}
+@media all and (max-width:767px) and (min-width: 640px) and (max-height: 1300px) and (min-height: 1000px) {
+  #particles-js{
+    height: 50vh;
+  }
+  #aboutus-content{
+    border:none;
+  }
+}
+
+@media all and (max-width:767px) and (min-width: 640px) and (max-height: 1400px) and (min-height: 1300px) {
+  #particles-js{
+    height: 40vh;
+  }
+  #aboutus-content{
+    border: none;
+  }
+}
+@media all and (min-width:768px) and (max-width: 850px)  and (max-height: 400px) and (min-height: 300px){
+	#particles-js{
+		height: 100vh;
+	}
+	.laptop {
+  		width: 70%;
+  		height:: 350px;
+  		border: 10px solid black;
+  		margin-left: 15%;
+  		margin-top: 14%;
+    }
+     #aboutus-content{
+    text-align: justify;
+    line-height: 25px;
+    padding: 20px 50px;
+    font-size: 150%;
+    overflow: hidden;
+  	}
+		
+		#hero-unit{
+			font-size: 80%;
+			top:20%;
+		}
+}
+@media all and (min-width:767px) and (max-width: 850px) and (max-height: 500px) and (min-height: 400px){
+		#particles-js{
+			height: 100vh;
+		}
+		.laptop {
+  		width: 70%;
+  		height:: 350px;
+  		border: 10px solid black;
+  		margin-left: 15%;
+  		margin-top: 14%;
+    }
+     #aboutus-content{
+    text-align: justify;
+    line-height: 25px;
+    padding: 20px 50px;
+    font-size: 150%;
+    overflow: hidden;
+    }
+    #hero-unit{
+  	font-size: 100%;
+  	top:20%;
+  	}
+}
+@media all and (min-width:767px) and (max-width: 850px) and (max-height: 600px) and (min-height: 500px){
+	#particles-js{
+		height: 100vh;
+	}
+	.laptop {
+  		width: 70%;
+  		height:: 350px;
+  		border: 10px solid black;
+  		margin-left: 15%;
+  		margin-top: 14%;
+    }
+     #aboutus-content{
+    text-align: justify;
+    line-height: 25px;
+    padding: 20px 50px;
+    font-size: 150%;
+    overflow: hidden;
+    }
+    #hero-unit{
+  	font-size: 120%;
+  	top:20%;
+  }
+}
+
+@media all and (min-width:767px)  and (max-width: 850px) and (max-height: 700px) and (min-height: 600px){
+	#particles-js{
+		height: 70vh;
+	}
+	.laptop {
+  		width: 70%;
+  		height:: 350px;
+  		border: 10px solid black;
+  		margin-left: 15%;
+  		margin-top: 19%;
+    }
+     #aboutus-content{
+    text-align: justify;
+    line-height: 25px;
+    padding: 20px 50px;
+    font-size: 150%;
+    overflow: hidden;
+  }
+}
+
+@media all and (min-width:767px) and (max-width: 850px) and (max-height: 1000px) and (min-height: 700px){
+		.laptop {
+  		width: 70%;
+  		height:: 350px;
+  		border: 10px solid black;
+  		margin-left: 15%;
+  		margin-top: 19%;
+    }
+    #aboutus-content{
+    text-align: justify;
+    line-height: 25px;
+    padding: 20px 50px;
+    font-size: 150%;
+    overflow: hidden;
+	  }
+}
+
+@media all and (min-width:767px) and (max-width: 850px) and (max-height: 1300px) and (min-height: 1000px){
+	#particles-js{
+		height: 50vh;
+	}
+	.laptop {
+  		width: 70%;
+  		height:: 350px;
+  		border: 10px solid black;
+  		margin-left: 15%;
+  		margin-top: 19%;
+  }
+  #aboutus-content{
+    text-align: justify;
+    line-height: 25px;
+    padding: 20px 50px;
+    font-size: 150%;
+    overflow: hidden;
+  }
+}
+
+@media all and (min-width:767px) and (max-width: 850px) and (max-height: 1400px) and (min-height: 1300px){
+	#particles-js{
+		height: 40vh;
+	}
+	.laptop {
+  		width: 70%;
+  		height:: 350px;
+  		border: 10px solid black;
+  		margin-left: 15%;
+  		margin-top: 19%;
+    }
+     #aboutus-content{
+    text-align: justify;
+    line-height: 25px;
+    padding: 20px 50px;
+    font-size: 150%;
+    overflow: hidden;
+  }
+}
+
+@media all and (min-width:850px) and (max-width:1200px)  and (max-height: 400px) and (min-height: 300px){
+	#particles-js{
+		height: 100vh;
+	}
+	.laptop {
+  		width: 70%;
+  		height:: 350px;
+  		border: 10px solid black;
+  		margin-left: 15%;
+  		margin-top: 12%;
+    }
+     #aboutus-content{
+    text-align: justify;
+    line-height: 30px;
+    padding: 20px 50px;
+    font-size: 175%;
+    overflow: hidden;
+  }
+  #hero-unit{
+  	font-size: 80%;
+  	top:20%;
+  }
+}
+
+@media all and (min-width:850px) and (max-width: 1200px) and (max-height: 500px) and (min-height: 400px){
+	#particles-js{
+		height: 100vh;
+	}
+	.laptop {
+  		width: 70%;
+  		height:: 350px;
+  		border: 10px solid black;
+  		margin-left: 15%;
+  		margin-top: 12%;
+    }
+     #aboutus-content{
+    text-align: justify;
+    line-height: 30px;
+    padding: 20px 50px;
+    font-size: 175%;
+    overflow: hidden;
+    }
+    #hero-unit{
+  	font-size: 100%;
+  	top:20%;
+  }
+}
+
+@media all and (min-width:850px) and (max-width: 1200px) and (max-height: 600px) and (min-height: 500px){
+		#particles-js{
+		height: 100vh;
+	}
+	.laptop {
+  		width: 70%;
+  		height:: 350px;
+  		border: 10px solid black;
+  		margin-left: 15%;
+  		margin-top: 12%;
+    }
+     #aboutus-content{
+    text-align: justify;
+    line-height: 30px;
+    padding: 20px 50px;
+    font-size: 175%;
+    overflow: hidden;
+    }
+    #hero-unit{
+  	font-size: 120%;
+  	top:20%;
+  }
+}
+
+@media all and (min-width:850px) and (max-width: 1200px) and (max-height: 700px) and (min-height: 600px){
+	#particles-js{
+		height: 72vh;
+	}
+	.laptop {
+  		width: 70%;
+  		height:: 350px;
+  		border: 10px solid black;
+  		margin-left: 15%;
+  		margin-top: 16%;
+    }
+     #aboutus-content{
+    text-align: justify;
+    line-height: 30px;
+    padding: 20px 50px;
+    font-size: 175%;
+    overflow: hidden;
+  }
+}
+
+@media all and (min-width:850px) and (max-width: 1200px) and (max-height: 1000px) and (min-height: 700px){
+	.laptop {
+  		width: 70%;
+  		height:: 350px;
+  		border: 10px solid black;
+  		margin-left: 15%;
+  		margin-top: 16%;
+    }
+     #aboutus-content{
+    text-align: justify;
+    line-height: 30px;
+    padding: 20px 50px;
+    font-size: 175%;
+    overflow: hidden;
+  }
+}
+
+@media all and (min-width:850px) and (max-width: 1200px) and (max-height: 1300px) and (min-height: 1000px){
+		#particles-js{
+		height: 50vh;
+	}
+	.laptop {
+  		width: 70%;
+  		height:: 350px;
+  		border: 10px solid black;
+  		margin-left: 15%;
+  		margin-top: 16%;
+    }
+     #aboutus-content{
+    text-align: justify;
+    line-height: 30px;
+    padding: 20px 50px;
+    font-size: 175%;
+    overflow: hidden;
+  }
+}
+
+@media all and (min-width:1200px) and (max-width: 1300px) and (max-height: 1000px) and (min-height: 700px){
+	.laptop {
+  		width: 70%;
+  		height:: 350px;
+  		border: 10px solid black;
+  		margin-left: 15%;
+  		margin-top: 7%;
+    }
+     #aboutus-content{
+    text-align: justify;
+    line-height: 30px;
+    padding: 20px 50px;
+    font-size: 175%;
+    overflow: hidden;
+  }
+}
+
+@media all and (min-width:1300px) and (max-width: 1400px) and (max-height: 1000px) and (min-height: 700px){
+	.laptop {
+  		width: 70%;
+  		height:: 350px;
+  		border: 10px solid black;
+  		margin-left: 15%;
+  		margin-top: 7%;
+    }
+     #aboutus-content{
+    text-align: justify;
+    line-height: 35px;
+    padding: 20px 50px;
+    font-size: 200%;
+    overflow: hidden;
+  }
+}
+
+</style>
+	<div id="hero-unit" data-aos="fade-right">
+		<div class="container">
+		<h1 class="display-4">GitHub</h1>
+		<p class="lead fon-res1">Build software better, together</p>
+		<hr class="my-4">
+		<p class="fon-res2">Learn how to use our platform for collaborative software development.</p>
+		<p class="lead">
+			<a class="btn btn-md btn-raised btn-danger " href="#" role="button">Learn more</a>
+		</p>
+		</div>
+	</div>
+
+	<div class="jumbotron jumbotron-fluid ">
+		<div id="particles-js"></div>
+	</div>
+
+	<div class="row section">
+		<div class="col-md-12 col-sm-12 col-xs-12 col-lg-12">
+			<div class="container aboutus" data-aos="fade-right">
+				<center>
+					<h3><b>About GitHub</b></h3>
+				</center>
+				<div id="aboutus-content" style="border:none;">
+					GitHub is a web-based hosting service for version control using Git. It is mostly used for computer code. It offers all of the distributed version control and source code management (SCM) functionality of Git as well as adding its own features.
+					It provides access control and several collaboration features such as bug tracking, feature requests, task management, and wikis for every project.
+					GitHub offers plans for enterprise, team, pro and free accounts[4] which are commonly used to host open-source software projects, As of January 2019, GitHub offers unlimited private repositories to all plans, including free accounts.
+					As of June 2018, GitHub reports having over 28 million users and 57 million repositories (including 28 million public repositories), making it the largest host of source code in the world.				
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	<div class="row section" id="how-section">
+		<div class="container-fluid" style="margin-bottom:20px;" data-aos="fade-up">
+			<center><h3><b>HOW DOES IT WORK?</b></h3></center>
+		</div>
+		<div class="col-md-6 col-sm-12 col-xs-12 col-lg-3" data-aos="fade-up">
+			<div class="container">
+				<center>
+					<div class="card" style="width: 90%;">
+					  <div class="icon"><i class="fas fa-hand-pointer fa-8x"></i></div><hr>
+					  <div class="card-body">
+					    <p class="card-text">Select Modules</p>
+					  </div>
+					</div>
+				</center>
+			</div>
+		</div>
+		<div class="col-md-6 col-sm-12 col-xs-12 col-lg-3" data-aos="fade-up">
+			<div class="container">
+				<center>
+					<div class="card" style="width: 90%;">
+					  <div class="icon"><i class="fas fa-code fa-8x"></i></div><hr>
+					  <div class="card-body">
+					    <p class="card-text">Generate Code</p>
+					  </div>
+					</div>
+				</center>
+			</div>
+		</div>
+		<div class="col-md-6 col-sm-12 col-xs-12 col-lg-3" data-aos="fade-up">
+			<div class="container">
+				<center>
+					<div class="card" style="width: 90%;">
+					  <div class="icon"><i class="fas fa-download fa-8x"></i></div><hr>
+					  <div class="card-body">
+					    <p class="card-text">Download Code</p>
+					  </div>
+					</div>
+				</center>
+			</div>
+		</div>
+		<div class="col-md-6 col-sm-12 col-xs-12 col-lg-3" data-aos="fade-up">
+			<div class="container">
+				<center>
+					<div class="card" style="width: 90%;">
+					  <div class="icon"><i class="fas fa-cogs fa-8x"></i></div><hr>
+					  <div class="card-body">
+					    <p class="card-text">Run Code from Anywhere</p>
+					  </div>
+					</div>
+				</center>
+			</div>
+		</div>
+	</div>	
+	
+	<script type="text/javascript">{% include "js/particles.js" %}</script>
+
+	<script type="text/javascript">{% include "js/app.js" %}</script>
+
+{% endblock content %}

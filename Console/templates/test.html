@@ -1,0 +1,65 @@
+<!-- <div class="tabs-page">
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="active"><a href="#variant1" aria-controls="variant1" role="tab" data-toggle="tab">With Return</a></li>
+    </ul>
+</div>
+ -->
+<div class="tabs-page">
+    <div class="tab-content">
+        <div role="tabpanel" class="tab-pane active" id="variant1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-12">
+                      <form>
+                        <div class="card" style="width: 100%;">
+                          <div class="card-body">
+
+                            <h5 class="card-title">Create a function</h5>
+
+                            <p>
+                            <div class="form-group">
+                                <label class="form-check-label">Enter function name</label>                     
+                                <input type="text" class="form-control" id="ClassName" placeholder="Enter function name" name="class">
+
+                                <label class="form-check-label" for="inlineRadio2">Enter inherited classes (Optional)</label>
+                                <input type="text" class="form-control" id="Inherit" placeholder="Separate class names by comma. No spaces." name="inherits">
+                           
+                            </div>
+                            <input type="button" class="btn btn-success" onclick="printClass();" value="Add Code">
+ 
+                            </p>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>      
+</div>
+
+<script type="text/javascript">
+  function printClass(){
+    var name, inherits;
+    if(document.getElementById("ClassName").value !== "") {
+      name = document.getElementById("ClassName").value;
+    }
+    else {
+      swal("Enter valid function name!",{icon: "info",});
+      return;
+    }
+    if(document.getElementById("Inherit").value !== "") {
+      inherits = document.getElementById("Inherit").value;
+      // params = params.split(",");
+    }
+    else {
+      swal("Select valid comparator!",{icon: "info",});
+      return;
+    }
+    var output = indent(tabspace) + "class " + name + "(" + inherits + "):\n";
+    var code = document.getElementById('code-area');
+    updateIndent("class", output);
+  }
+
+</script>

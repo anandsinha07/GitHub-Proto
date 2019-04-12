@@ -1,0 +1,11 @@
+# [START runtime]
+runtime: python
+env: flex
+entrypoint: gunicorn -b :$PORT CodeVisor.wsgi
+
+beta_settings:
+    cloud_sql_instances: codevisor-208412:us-central1:codevisor-db
+
+runtime_config:
+  python_version: 3
+# [END runtime]

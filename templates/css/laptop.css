@@ -1,0 +1,20 @@
+<style>
+
+/* The laptop with borders */
+.laptop {
+  width: 70%;
+  height: 350px;
+  border: 10px solid black;
+  margin-left: 15%;
+  margin-top: 9%;
+}
+/* The screen (or content) of the device */
+.laptop .content {
+  width: 102%;
+  height: 345px;
+  overflow: hidden;
+  border: none;
+}
+
+
+</style>

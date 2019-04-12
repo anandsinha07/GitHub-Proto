@@ -1,0 +1,115 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container" style="padding:5%;">
+	<h3>Developer Console</h3>
+		{% if form.errors %}
+			<div id="errors" hidden>{{ form.errors }}</div>
+			<script type="text/javascript">
+				var msg = "";
+				var errorlist = document.getElementById("errors").getElementsByClassName("errorlist")[0];
+				var ul = errorlist.getElementsByTagName("ul");
+				for(var i=0;i<ul.length;i++)
+				{
+					var li = ul[i].getElementsByTagName("li");
+					for (var j = 0;j<li.length;j++) {
+						msg += li[j].innerHTML + "\n";
+					}
+				}
+				swal ( "Module Creation Unsuccessful" , msg  ,  "error" );
+			</script>
+		{% endif %}
+	<form method="POST">{% csrf_token %}
+		<div class="form-row">
+			<div class="form-group col-md-12 col-lg-6 col-sm-12">
+				<label for="title">Module Title</label>
+				<input type="text" class="form-control" id="title" name="title" placeholder="Enter Title" value="{{ object.title }}" required>
+			</div>
+			<div class="form-group col-md-12 col-lg-6 col-sm-12">
+				<label for="version">Module Version</label>
+				<input type="number" class="form-control" id="version" name="version" placeholder="Enter Version" value="{{ object.version }}" required>
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-12 col-lg-6 col-sm-12">
+				<label for="dev_id">Module Developer ID</label>
+				<input type="text" class="form-control" id="dev_id" name="dev_id" placeholder="Enter ID" value="{{ object.dev_id }}" required>
+			</div>
+			<div class="form-group col-md-12 col-lg-6 col-sm-12">
+				<label for="developer">Module Developer Name</label>
+				<input type="text" class="form-control" id="developer" name="developer" placeholder="Enter name" value="{{ object.developer }}" required>
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-12 col-lg-12 col-sm-12">
+				<label for="description">Module Description</label>
+				<textarea class="form-control" id="description" name="description" placeholder="Enter Description" required>{{ object.description }}</textarea>
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-12 col-lg-12 col-sm-12">
+				<label for="languages">Languages Supported</label>
+				<textarea class="form-control" id="languages" name="languages" placeholder="Enter Languages" required>{{ object.languages }}</textarea>
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-12 col-lg-4 col-sm-12">
+				<label for="NumberOfInputs">Number of Inputs</label>
+				<input type="number" class="form-control" id="NumberOfInputs" name="NumberOfInputs" placeholder="Number of inputs" value="{{ object.NumberOfInputs }}" required>
+			</div>
+			<div class="form-group col-md-12 col-lg-4 col-sm-12">
+				<label for="InputType">Input Types</label>
+				<input type="text" class="form-control" id="InputType" name="InputType" placeholder="Enter input types" value="{{ object.InputType }}" required>
+			</div>
+			<div class="form-group col-md-12 col-lg-4 col-sm-12">
+				<label for="Optional">Optional</label>
+				<input type="text" class="form-control" id="Optional" name="Optional" placeholder="Enter optional inputs" value="{{ object.Optional }}" required>
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-12 col-lg-12 col-sm-12">
+				<label for="InputDescription">Input Descriptions</label>
+				<textarea class="form-control" id="InputDescription" name="InputDescription" placeholder="Enter Input Descriptions" required>{{ object.InputDescription }}</textarea>
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-12 col-lg-12 col-sm-12">
+				<label for="SubstitutedCode">Substituted Codes</label>
+				<textarea class="form-control" id="SubstitutedCode" name="SubstitutedCode" placeholder="Enter Substituted Code" required>{{ object.SubstitutedCode }}</textarea>
+			</div>
+		</div>
+		<div class="form-row">
+			<div class="form-group col-md-12 col-lg-12 col-sm-12">
+				<label for="var_decl">Variables Declared</label>
+				<input type="text" class="form-control" id="var_decl" name="var_decl" placeholder="Enter variable declared" value="{{ object.var_decl }}">
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" id="Indent" name="Indent" {% if object.Indent %}checked{% endif %}>
+				<label class="form-check-label" for="Indent" style="padding-top:0.6%;">
+					Indent
+				</label>
+			</div>
+		</div>
+		<div class="form-group">
+			<div class="form-check">
+				<input class="form-check-input" type="checkbox" id="IsInFunction" name="IsInFunction" {% if object.IsInFunction %}checked{% endif %} >
+				<label class="form-check-label" for="IsInFunction" style="padding-top:0.6%;">
+					IsInFunction
+				</label>
+			</div>
+		</div>
+		<button type="submit" class="btn btn-bg-indigo btn-raised">Create</button>
+	</form>	
+ 
+
+ </div>
+
+<!-- <form method="POST"> {% csrf_token %}
+	{{ form.as_p }}
+	<button class="btn btn-success" type="submit">Save</button>
+</form>
+ -->
+{% endblock content %}
